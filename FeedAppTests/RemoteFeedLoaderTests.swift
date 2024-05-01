@@ -104,7 +104,7 @@ final class RemoteFeedLoaderTests: XCTestCase {
         
         expect(sut, toCompleteWith: .success([item1, item2]), when: {
             let json = try! JSONSerialization.data(withJSONObject: itemsJSON)
-            client.complete(withStatusCode: 200, data: jsonData)
+            client.complete(withStatusCode: 200, data: json)
         })
     }
     
