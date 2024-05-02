@@ -90,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				3E4B7F402BE238C8000AD97A /* Feed Feature */,
+				3E4B7F472BE24232000AD97A /* FeedAPI */,
 				3E4B7F292BE238BB000AD97A /* FeedApp.h */,
 				3E4B7F2A2BE238BB000AD97A /* FeedApp.docc */,
 			);
@@ -107,7 +108,6 @@
 		3E4B7F402BE238C8000AD97A /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
-				3E4B7F472BE24232000AD97A /* FeedAPI */,
 				3E4B7F412BE238C8000AD97A /* FeedLoader.swift */,
 				3E4B7F422BE238C8000AD97A /* FeedItem.swift */,
 			);
