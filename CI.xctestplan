@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "9640972B-ED52-4787-B743-B9522709EB2C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FeedApp.xcodeproj",
+        "identifier" : "3E9047352BE5296A001428F9",
+        "name" : "FeedAppEndToEndTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FeedApp.xcodeproj",
+        "identifier" : "3E4B7F2F2BE238BB000AD97A",
+        "name" : "FeedAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
