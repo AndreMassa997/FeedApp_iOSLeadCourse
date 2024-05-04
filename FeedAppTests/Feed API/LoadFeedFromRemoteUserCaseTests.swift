@@ -1,5 +1,5 @@
 //
-//  RemoteFeedLoaderTests.swift
+//  LoadFeedFromRemoteUserCaseTests.swift
 //  FeedAppTests
 //
 //  Created by Andrea Massari on 01/05/24.
@@ -8,7 +8,7 @@
 import XCTest
 import FeedApp
 
-final class RemoteFeedLoaderTests: XCTestCase {
+final class LoadFeedFromRemoteUserCaseTests: XCTestCase {
 
     func test_init_doesNotRequestDataFromURL(){
         let (_, client) = makeSUT()
