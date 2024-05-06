@@ -96,7 +96,7 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
     func test_load_hasNotSideEffectsOnNonExpiredCache() {
         let feed = uniqueImageFeed()
         let fixedCurrentDate = Date()
-        let nonExpiredTimestamp = fixedCurrentDate.adding(days: -7).adding(seconds: 1)
+        let nonExpiredTimestamp = fixedCurrentDate.minusFeedCacheMaxAge().adding(seconds: 1)
         let (sut , store) = makeSUT(currentDate: { fixedCurrentDate })
         
         sut.load { _ in }
@@ -109,7 +109,7 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
     func test_load_hasNotSideEffectOnCacheExpiration() {
         let feed = uniqueImageFeed()
         let fixedCurrentDate = Date()
-        let expirationTimestamp = fixedCurrentDate.adding(days: -7)
+        let expirationTimestamp = fixedCurrentDate.minusFeedCacheMaxAge()
         let (sut , store) = makeSUT(currentDate: { fixedCurrentDate })
         
         sut.load { _ in }
@@ -122,12 +122,12 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
     func test_load_hasNotSideEffectOnExpiredCache() {
         let feed = uniqueImageFeed()
         let fixedCurrentDate = Date()
-        let expiredCache = fixedCurrentDate.adding(days: -7).adding(seconds: -1)
+        let expiredTimestamp = fixedCurrentDate.minusFeedCacheMaxAge().adding(seconds: -1)
         let (sut , store) = makeSUT(currentDate: { fixedCurrentDate })
         
         sut.load { _ in }
         
-        store.completeRetrieval(with: feed.local, timestamp: expiredCache)
+        store.completeRetrieval(with: feed.local, timestamp: expiredTimestamp)
         
         XCTAssertEqual(store.receivedMessages, [.retrieve])
     }
