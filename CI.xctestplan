@@ -27,6 +27,13 @@
         "identifier" : "3E4B7F2F2BE238BB000AD97A",
         "name" : "FeedAppTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FeedApp.xcodeproj",
+        "identifier" : "3E6F4A9A2BECCCEE00C3F672",
+        "name" : "FeedAppCacheIntegrationTests"
+      }
     }
   ],
   "version" : 1
