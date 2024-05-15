@@ -112,6 +112,7 @@
 		3E6F4A9B2BECCCEE00C3F672 /* FeedAppCacheIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedAppCacheIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6F4A9D2BECCCEE00C3F672 /* FeedAppCacheIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAppCacheIntegrationTests.swift; sourceTree = "<group>"; };
 		3E6F4AA52BECCD0C00C3F672 /* FeedAppCacheIntegrationTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FeedAppCacheIntegrationTests.xctestplan; sourceTree = "<group>"; };
+		3E85E39E2BF5097800C3AD98 /* FeedAppEndToEndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FeedAppEndToEndTests.xctestplan; sourceTree = "<group>"; };
 		3E9047312BE527E4001428F9 /* FeedApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FeedApp.xctestplan; sourceTree = "<group>"; };
 		3E9047362BE5296A001428F9 /* FeedAppEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedAppEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9047382BE5296A001428F9 /* FeedAppEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAppEndToEndTests.swift; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 		3E4B7F1C2BE238BB000AD97A = {
 			isa = PBXGroup;
 			children = (
+				3E85E39E2BF5097800C3AD98 /* FeedAppEndToEndTests.xctestplan */,
 				3E6F4AA52BECCD0C00C3F672 /* FeedAppCacheIntegrationTests.xctestplan */,
 				3E9047422BE53016001428F9 /* CI.xctestplan */,
 				3E9047312BE527E4001428F9 /* FeedApp.xctestplan */,
@@ -839,6 +841,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.FeedAppEndToEndTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -854,6 +857,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.FeedAppEndToEndTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
