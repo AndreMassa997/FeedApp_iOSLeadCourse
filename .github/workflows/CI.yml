@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build MacOS Scheme and test
-        run: xcodebuild clean build test -scheme "CI_macOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        run: xcodebuild clean build test -scheme "CI_macOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk macosx -destination "platform=macOS" ONLY_ACTIVE_ARCH=YES
     
       - name: Build iOS Scheme and test
-        run: xcodebuild clean build test -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        run: xcodebuild clean build test -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator, OS=17.0, name=iPhone 15" ONLY_ACTIVE_ARCH=YES
