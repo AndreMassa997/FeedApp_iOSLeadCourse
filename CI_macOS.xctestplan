@@ -13,11 +13,6 @@
       "targets" : [
         {
           "containerPath" : "container:FeedApp.xcodeproj",
-          "identifier" : "3E85E3A32BF50AD700C3AD98",
-          "name" : "EssentialFeediOS"
-        },
-        {
-          "containerPath" : "container:FeedApp.xcodeproj",
           "identifier" : "3E4B7F252BE238BB000AD97A",
           "name" : "FeedApp"
         }
@@ -46,13 +41,6 @@
         "containerPath" : "container:FeedApp.xcodeproj",
         "identifier" : "3E6F4A9A2BECCCEE00C3F672",
         "name" : "FeedAppCacheIntegrationTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:FeedApp.xcodeproj",
-        "identifier" : "3E85E3AC2BF50AD700C3AD98",
-        "name" : "EssentialFeediOSTests"
       }
     }
   ],
