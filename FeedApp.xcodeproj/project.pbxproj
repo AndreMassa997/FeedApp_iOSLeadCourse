@@ -402,7 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				3E85E3EA2BF744A600C3AD98 /* Feed UI */,
-				3E85E3D12BF73D9800C3AD98 /* FeedImageDataLoader */,
+				3E85E3D12BF73D9800C3AD98 /* Feed Image Loader */,
 				3E85E3A72BF50AD700C3AD98 /* EssentialFeediOS.docc */,
 			);
 			path = EssentialFeediOS;
@@ -424,12 +424,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3E85E3D12BF73D9800C3AD98 /* FeedImageDataLoader */ = {
+		3E85E3D12BF73D9800C3AD98 /* Feed Image Loader */ = {
 			isa = PBXGroup;
 			children = (
 				3E85E3D22BF73DA700C3AD98 /* FeedImageDataLoader.swift */,
 			);
-			path = FeedImageDataLoader;
+			path = "Feed Image Loader";
 			sourceTree = "<group>";
 		};
 		3E85E3D42BF73E0E00C3AD98 /* Controllers */ = {
