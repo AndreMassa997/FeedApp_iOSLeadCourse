@@ -8,7 +8,7 @@
 import UIKit
 import FeedApp
 
-final public class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
+public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
     private var feedLoader: FeedLoader?
     private var tableModel = [FeedImage]()
     private var imageLoader: FeedImageDataLoader?
