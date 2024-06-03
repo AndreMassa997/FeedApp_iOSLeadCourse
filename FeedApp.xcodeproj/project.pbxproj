@@ -71,6 +71,7 @@
 		3EB1A4452BE4BB310049A302 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1A4442BE4BB310049A302 /* XCTestCase+MemoryLeakTracking.swift */; };
 		3EB1A4472BE4C66D0049A302 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1A4462BE4C66D0049A302 /* URLSessionHTTPClient.swift */; };
 		3ED65CAD2C0E07FC00E5F3F4 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED65CAC2C0E07FC00E5F3F4 /* FeedViewModel.swift */; };
+		3ED65CAF2C0E0C6800E5F3F4 /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED65CAE2C0E0C6800E5F3F4 /* FeedImageViewModel.swift */; };
 		3EE757BF2BEA2D0B00427723 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE757BE2BEA2D0B00427723 /* CodableFeedStore.swift */; };
 /* End PBXBuildFile section */
 
@@ -192,6 +193,7 @@
 		3EB1A4442BE4BB310049A302 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		3EB1A4462BE4C66D0049A302 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		3ED65CAC2C0E07FC00E5F3F4 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		3ED65CAE2C0E0C6800E5F3F4 /* FeedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModel.swift; sourceTree = "<group>"; };
 		3EE757BE2BEA2D0B00427723 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -538,6 +540,7 @@
 			isa = PBXGroup;
 			children = (
 				3ED65CAC2C0E07FC00E5F3F4 /* FeedViewModel.swift */,
+				3ED65CAE2C0E0C6800E5F3F4 /* FeedImageViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -839,6 +842,7 @@
 				3E85E3D32BF73DA800C3AD98 /* FeedImageDataLoader.swift in Sources */,
 				3E85E3F22BF76C3F00C3AD98 /* FeedUIComposer.swift in Sources */,
 				3E85E3ED2BF7518700C3AD98 /* FeedRefreshViewController.swift in Sources */,
+				3ED65CAF2C0E0C6800E5F3F4 /* FeedImageViewModel.swift in Sources */,
 				3E85E3CE2BF63F6800C3AD98 /* FeedImageCell.swift in Sources */,
 				3E85E3EF2BF7663A00C3AD98 /* FeedImageCellController.swift in Sources */,
 				3E85E3D02BF6517D00C3AD98 /* UIView+Shimmering.swift in Sources */,
