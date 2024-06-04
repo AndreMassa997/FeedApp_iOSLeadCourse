@@ -79,6 +79,9 @@ Location</string>
                                                             <buttonConfiguration key="configuration" style="plain" title="↻">
                                                                 <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="acW-td-fpH" eventType="touchUpInside" id="e6s-2U-POs"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,6 +122,14 @@ Location</string>
                                         <constraint firstAttribute="trailingMargin" secondItem="Odb-7Z-YwH" secondAttribute="trailing" id="rev-JT-P2o"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="XV3-f7-R5y" id="mI6-NF-dAD"/>
+                                    <outlet property="feedImageContainer" destination="ZrE-xQ-K5x" id="kDC-xm-47O"/>
+                                    <outlet property="feedImageRetryButton" destination="RWi-Uo-Mlz" id="nz7-sn-4mD"/>
+                                    <outlet property="feedImageView" destination="J2M-Ns-idv" id="ivk-m7-6hA"/>
+                                    <outlet property="locationContainer" destination="Z5W-wC-MyL" id="j3F-g3-HHg"/>
+                                    <outlet property="locationLabel" destination="wtR-ho-VAm" id="bRv-cy-vYV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
