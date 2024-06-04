@@ -26,6 +26,4 @@ public class FeedImageCell: UITableViewCell {
     @objc private func retryButtonTapped() {
         onRetry?()
     }
-
-    
 }
