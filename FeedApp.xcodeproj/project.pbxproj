@@ -139,6 +139,7 @@
 		3E4198FC2C103AD600E53E4E /* FeedViewcontrollerTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewcontrollerTests+Localization.swift"; sourceTree = "<group>"; };
 		3E4198FF2C103B7100E53E4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		3E4199012C103BBF00E53E4E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		3E4199022C103BEE00E53E4E /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		3E4B7F262BE238BB000AD97A /* FeedApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4B7F292BE238BB000AD97A /* FeedApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedApp.h; sourceTree = "<group>"; };
 		3E4B7F2A2BE238BB000AD97A /* FeedApp.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FeedApp.docc; sourceTree = "<group>"; };
@@ -734,6 +735,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = 3E4B7F1C2BE238BB000AD97A;
 			productRefGroup = 3E4B7F272BE238BB000AD97A /* Products */;
@@ -940,6 +942,7 @@
 			children = (
 				3E4198FF2C103B7100E53E4E /* en */,
 				3E4199012C103BBF00E53E4E /* pt-BR */,
+				3E4199022C103BEE00E53E4E /* el */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
