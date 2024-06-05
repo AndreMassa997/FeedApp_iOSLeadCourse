@@ -1,5 +1,5 @@
 //
-//  FeedViewControllerTests.swift
+//  FeedUIIntegrationTests.swift
 //  EssentialFeediOSTests
 //
 //  Created by Andrea Massari on 15/05/24.
@@ -10,7 +10,7 @@ import UIKit
 import FeedApp
 import EssentialFeediOS
 
-final class FeedViewControllerTests: XCTestCase {
+final class FeedUIIntegrationTests: XCTestCase {
     
     func test_feedViwe_hasTitle() {
         let (sut, _) = makeSUT()
