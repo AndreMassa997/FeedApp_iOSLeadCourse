@@ -78,6 +78,7 @@
 		3E965DFE2C15A282007E36A5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E965DFD2C15A282007E36A5 /* ErrorView.swift */; };
 		3E965E012C15A605007E36A5 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E965E002C15A605007E36A5 /* FeedErrorViewModel.swift */; };
 		3E965E032C15A649007E36A5 /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E965E022C15A649007E36A5 /* UIRefreshControl+Helpers.swift */; };
+		3E965E062C15ADA1007E36A5 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E965E082C15ADA1007E36A5 /* Feed.strings */; };
 		3EA2DBA52C0EEC93004E5375 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA2DBA42C0EEC93004E5375 /* FeedPresenter.swift */; };
 		3EA2DBA72C0F0294004E5375 /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA2DBA62C0F0294004E5375 /* FeedImagePresenter.swift */; };
 		3EA2DBA92C0F6968004E5375 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA2DBA82C0F6968004E5375 /* Feed.storyboard */; };
@@ -218,6 +219,9 @@
 		3E965DFD2C15A282007E36A5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		3E965E002C15A605007E36A5 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 		3E965E022C15A649007E36A5 /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
+		3E965E072C15ADA1007E36A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
+		3E965E092C15ADA6007E36A5 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
+		3E965E0A2C15ADA7007E36A5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		3EA2DBA42C0EEC93004E5375 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		3EA2DBA62C0F0294004E5375 /* FeedImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenter.swift; sourceTree = "<group>"; };
 		3EA2DBA82C0F6968004E5375 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
@@ -583,6 +587,7 @@
 			isa = PBXGroup;
 			children = (
 				3E965DFB2C159D48007E36A5 /* FeedPresenterTests.swift */,
+				3E965E082C15ADA1007E36A5 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -818,6 +823,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E965E062C15ADA1007E36A5 /* Feed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,6 +1013,16 @@
 				3E4198FF2C103B7100E53E4E /* en */,
 				3E4199012C103BBF00E53E4E /* pt-BR */,
 				3E4199022C103BEE00E53E4E /* el */,
+			);
+			name = Feed.strings;
+			sourceTree = "<group>";
+		};
+		3E965E082C15ADA1007E36A5 /* Feed.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E965E072C15ADA1007E36A5 /* en */,
+				3E965E092C15ADA6007E36A5 /* el */,
+				3E965E0A2C15ADA7007E36A5 /* pt-BR */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
