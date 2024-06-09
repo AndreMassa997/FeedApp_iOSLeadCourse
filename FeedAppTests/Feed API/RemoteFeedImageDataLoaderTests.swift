@@ -6,11 +6,20 @@
 //
 
 import XCTest
+import FeedApp
 
 class RemoteFeedImageDataLoader {
-    init(client: Any) {
-        
+    
+    private let client: HTTPClient
+    
+    init(client: HTTPClient) {
+        self.client = client
     }
+    
+    func loadImageData(from url: URL, completion: @escaping (Any) -> Void) {
+        client.get(from: url) { _ in }
+    }
+    
 }
 
 class RemoteFeedImageDataLoaderTests: XCTestCase {
@@ -29,7 +38,11 @@ class RemoteFeedImageDataLoaderTests: XCTestCase {
         return (sut, client)
     }
     
-    private class HTTPClientSpy {
+    private class HTTPClientSpy: HTTPClient {
         var requestedURLs = [URL]()
+        
+        func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
+            requestedURLs.append(url)
+        }
     }
 }
