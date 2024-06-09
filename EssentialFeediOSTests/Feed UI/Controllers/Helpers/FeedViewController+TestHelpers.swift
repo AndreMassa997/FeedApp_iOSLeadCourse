@@ -60,6 +60,10 @@ extension FeedViewController {
         tableView.numberOfRows(inSection: feedImagesSection)
     }
     
+    var errorMessage: String? {
+        return errorView.message
+    }
+    
     private var feedImagesSection: Int {
         0
     }
