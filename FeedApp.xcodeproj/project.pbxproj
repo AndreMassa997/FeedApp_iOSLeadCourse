@@ -96,7 +96,7 @@
 		3EB1A4412BE3F2220049A302 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1A4402BE3F2220049A302 /* URLSessionHTTPClientTests.swift */; };
 		3EB1A4452BE4BB310049A302 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1A4442BE4BB310049A302 /* XCTestCase+MemoryLeakTracking.swift */; };
 		3EB1A4472BE4C66D0049A302 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB1A4462BE4C66D0049A302 /* URLSessionHTTPClient.swift */; };
-		3ECD5E0E2C1974E1003B5301 /* LocalFeedImageDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5E0D2C1974E1003B5301 /* LocalFeedImageDataLoaderTests.swift */; };
+		3ECD5E0E2C1974E1003B5301 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5E0D2C1974E1003B5301 /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
 		3ECD5E102C1977DF003B5301 /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5E0F2C1977DF003B5301 /* FeedImageDataStore.swift */; };
 		3ECD5E122C19781E003B5301 /* LocalFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECD5E112C19781E003B5301 /* LocalFeedImageDataLoader.swift */; };
 		3EE757BF2BEA2D0B00427723 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE757BE2BEA2D0B00427723 /* CodableFeedStore.swift */; };
@@ -247,7 +247,7 @@
 		3EB1A4402BE3F2220049A302 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		3EB1A4442BE4BB310049A302 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		3EB1A4462BE4C66D0049A302 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
-		3ECD5E0D2C1974E1003B5301 /* LocalFeedImageDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoaderTests.swift; sourceTree = "<group>"; };
+		3ECD5E0D2C1974E1003B5301 /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		3ECD5E0F2C1977DF003B5301 /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
 		3ECD5E112C19781E003B5301 /* LocalFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		3EE757BE2BEA2D0B00427723 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
@@ -405,7 +405,7 @@
 				3E612A052BE7E0D4005E6000 /* LoadFeedFromCacheUseCaseTests.swift */,
 				3E612A0A2BE8ADEB005E6000 /* ValidateFeedCacheUseCaseTests.swift */,
 				3E6F4A882BEBC0DF00C3F672 /* CoreDataFeedStoreTests.swift */,
-				3ECD5E0D2C1974E1003B5301 /* LocalFeedImageDataLoaderTests.swift */,
+				3ECD5E0D2C1974E1003B5301 /* LoadFeedImageDataFromCacheUseCaseTests.swift */,
 			);
 			path = FeedCache;
 			sourceTree = "<group>";
@@ -938,7 +938,7 @@
 				3E6F4A842BEBBFD100C3F672 /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
 				3E965E152C15B154007E36A5 /* FeedLocalizationTests.swift in Sources */,
 				3EB1A4412BE3F2220049A302 /* URLSessionHTTPClientTests.swift in Sources */,
-				3ECD5E0E2C1974E1003B5301 /* LocalFeedImageDataLoaderTests.swift in Sources */,
+				3ECD5E0E2C1974E1003B5301 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
 				3E6CEE042C1825B200B2E346 /* HTTPClientSpy.swift in Sources */,
 				3E612A082BE7E277005E6000 /* FeedStoreSpy.swift in Sources */,
 				3E612A0F2BE8B18C005E6000 /* SharedTestHelpers.swift in Sources */,
