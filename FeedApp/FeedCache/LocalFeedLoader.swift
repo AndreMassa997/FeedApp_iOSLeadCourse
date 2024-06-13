@@ -24,7 +24,7 @@ extension LocalFeedLoader {
 
     public func save(_ feed: [FeedImage], completion: @escaping (SaveResult) -> Void) {
         
-        store.deleteCacheFeed { [weak self] deletionResult in
+        store.deleteCachedFeed { [weak self] deletionResult in
             guard let self else { return }
             
             switch deletionResult {
@@ -71,9 +71,9 @@ extension LocalFeedLoader {
             guard let self else { return }
             switch result {
             case .failure:
-                self.store.deleteCacheFeed { _ in }
+                self.store.deleteCachedFeed { _ in }
             case let .success(.some(cache)) where !FeedCachePolicy.validate(cache.timestamp, against: self.currentDate()):
-                self.store.deleteCacheFeed { _ in }
+                self.store.deleteCachedFeed { _ in }
             case .success: break
             }
         }
