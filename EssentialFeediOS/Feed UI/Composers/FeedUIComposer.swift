@@ -5,7 +5,7 @@
 //  Created by Andrea Massari on 17/05/24.
 //
 
-import FeedApp
+import EssentialFeed
 import UIKit
 
 public final class FeedUIComposer {

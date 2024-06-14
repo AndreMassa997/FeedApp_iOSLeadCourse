@@ -7,7 +7,7 @@
 
 import Foundation
 import EssentialFeediOS
-import FeedApp
+import EssentialFeed
 
 extension FeedUIIntegrationTests {
     class LoaderSpy: FeedLoader, FeedImageDataLoader {
@@ -19,7 +19,7 @@ extension FeedUIIntegrationTests {
             feedRequests.count
         }
         
-        func load(completion: @escaping (Result<[FeedApp.FeedImage], Error>) -> Void) {
+        func load(completion: @escaping (Result<[EssentialFeed.FeedImage], Error>) -> Void) {
             feedRequests.append(completion)
         }
         

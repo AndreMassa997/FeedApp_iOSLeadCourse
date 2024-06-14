@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import FeedApp
+import EssentialFeed
 import EssentialFeediOS
 
 extension FeedUIIntegrationTests {

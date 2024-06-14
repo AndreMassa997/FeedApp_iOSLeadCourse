@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FeedApp
+import EssentialFeed
 
 final class MainQueueDispatchDecorator<T> {
     private let decoratee: T
