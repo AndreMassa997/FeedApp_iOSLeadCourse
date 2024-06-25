@@ -93,6 +93,7 @@
 		3ECD5E1B2C197D0D003B5301 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		3EE4405E2C2A9F4000BB1FE1 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4405D2C2A9F4000BB1FE1 /* UIImage+TestHelpers.swift */; };
 		3EE440602C2AA01300BB1FE1 /* UITableView+HeaderSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4405F2C2AA01300BB1FE1 /* UITableView+HeaderSizing.swift */; };
+		3EE440622C2AAA0500BB1FE1 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE440612C2AAA0500BB1FE1 /* UIViewController+Snapshot.swift */; };
 		3EE757BF2BEA2D0B00427723 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE757BE2BEA2D0B00427723 /* CodableFeedStore.swift */; };
 /* End PBXBuildFile section */
 
@@ -238,6 +239,7 @@
 		3ECD5E1A2C197D0D003B5301 /* FeedStore2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore2.xcdatamodel; sourceTree = "<group>"; };
 		3EE4405D2C2A9F4000BB1FE1 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		3EE4405F2C2AA01300BB1FE1 /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
+		3EE440612C2AAA0500BB1FE1 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
 		3EE757BE2BEA2D0B00427723 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -597,6 +599,7 @@
 			isa = PBXGroup;
 			children = (
 				3EE4405D2C2A9F4000BB1FE1 /* UIImage+TestHelpers.swift */,
+				3EE440612C2AAA0500BB1FE1 /* UIViewController+Snapshot.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -943,6 +946,7 @@
 			files = (
 				3E85E3C42BF5159500C3AD98 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				3E6464012C2A990B003BE289 /* FeedSnapshotTests.swift in Sources */,
+				3EE440622C2AAA0500BB1FE1 /* UIViewController+Snapshot.swift in Sources */,
 				3EE4405E2C2A9F4000BB1FE1 /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
