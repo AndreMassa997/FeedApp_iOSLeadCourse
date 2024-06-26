@@ -16,6 +16,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     private var cellController: FeedImageCellController?
     
     @IBOutlet private(set) public var errorView: ErrorView?
+    private var loadingController = [IndexPath: FeedImageCellController]()
     
     private var tableModel = [FeedImageCellController]() {
         didSet {
@@ -37,6 +38,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }
     
     public func display(_ cellControllers: [FeedImageCellController]) {
+        loadingController = [:]
         tableModel = cellControllers
     }
     
@@ -66,6 +68,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }
     
     public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard tableModel.count > indexPath.row else { return }
         cancelCellControllerLoad(forRowAt: indexPath)
     }
     
@@ -82,10 +85,13 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     }
     
     private func cellController(forRowAt indexPath: IndexPath) -> FeedImageCellController {
-        tableModel[indexPath.row]
+        let controller = tableModel[indexPath.row]
+        loadingController[indexPath] = controller
+        return controller
     }
     
     private func cancelCellControllerLoad(forRowAt indexPath: IndexPath) {
-        cellController(forRowAt: indexPath).cancelLoad()
+        loadingController[indexPath]?.cancelLoad()
+        loadingController[indexPath] = nil
     }
 }
