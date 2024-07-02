@@ -310,7 +310,6 @@
 				3E6CEE0C2C182B8600B2E346 /* Helpers */,
 				3E4B7F452BE238D8000AD97A /* LoadFeedFromRemoteUserCaseTests.swift */,
 				3E965E1F2C15EDEB007E36A5 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				3E83B7042C33D10400657B2F /* LoadImageCommentsFromRemoteUseCaseTest.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -351,6 +350,7 @@
 		3E4B7F282BE238BB000AD97A /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				3E83B7112C33D7A800657B2F /* Image Comments API */,
 				3E83B70E2C33D70700657B2F /* Shared API Infra */,
 				3E83B70D2C33D6EF00657B2F /* Shared API */,
 				3E83B70A2C33D2F700657B2F /* Image Comments Feature */,
@@ -366,6 +366,7 @@
 		3E4B7F342BE238BB000AD97A /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E83B7122C33D7DC00657B2F /* Image Comments API */,
 				3E965DFA2C159D39007E36A5 /* Feed Presentation */,
 				3EB1A4432BE4BB190049A302 /* Helpers */,
 				3E6129F82BE68F5E005E6000 /* FeedCache */,
@@ -396,8 +397,6 @@
 				3E034A6C2BE362C0005AEF6F /* FeedItemsMapper.swift */,
 				3E612A012BE7DCA1005E6000 /* RemoteFeedItem.swift */,
 				3E6CEE052C18265000B2E346 /* RemoteFeedImageDataLoader.swift */,
-				3E83B7062C33D14500657B2F /* RemoteImagecommentsLoader.swift */,
-				3E83B7082C33D15D00657B2F /* ImageCommentsMapper.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
@@ -539,6 +538,23 @@
 				3EB1A4402BE3F2220049A302 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		3E83B7112C33D7A800657B2F /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				3E83B7062C33D14500657B2F /* RemoteImagecommentsLoader.swift */,
+				3E83B7082C33D15D00657B2F /* ImageCommentsMapper.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		3E83B7122C33D7DC00657B2F /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				3E83B7042C33D10400657B2F /* LoadImageCommentsFromRemoteUseCaseTest.swift */,
+			);
+			path = "Image Comments API";
 			sourceTree = "<group>";
 		};
 		3E85E3A52BF50AD700C3AD98 /* EssentialFeediOS */ = {
