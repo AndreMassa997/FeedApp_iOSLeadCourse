@@ -23,7 +23,7 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "containerPath" : "container:..\/FeedApp\/EssentialFeed.xcodeproj",
         "identifier" : "3E9047352BE5296A001428F9",
         "name" : "EssentialFeedEndToEndTests"
       }
